@@ -1,0 +1,33 @@
+The class names don't follow the conventional naming convention (Pascal Naming Convention). The proper convention is "InventorySystem.java" instead of "inventorySystem.java"
+
+##globalInventoryData.java
+<9-11>, <Global Data>, Using static variables
+<17>, <Conditional Complexity>, The return statement is ambiguous and doesn't reflect how the discount is being calculated clearly
+
+##inventorySystem.java
+<NA>, <Large Class>, inventorySystem class is too large, handling multiple responsibilities, which also violates "Single Responsibility Principle"
+
+<11-19, 24-29>, <Primitive Obsession>, the nested classes hold only variables of primitive types
+
+<41-42>, <Long Parameter List>, addProduct method has a long parameter list
+
+<44-48>, <Nested 'if-statements'>, the try block in addProduct method has multiple nested if-statements
+
+<78>, <Switch Statement>, Using switch statement is itself a code smell
+
+<80, 85, 87, 91, 93>, <Magic Numbers>, Using constant numbers like 0.8
+
+<107, 116, 126>, <Conditional Complexity>, it's difficult to determine how the total price is being calculated
+
+<104, 112, 122>, <Unused Methods>, these 3 methods aren't used anywhere in our code
+
+<134>, <Conditional Complexity>, it is hard to determine that "return -1" stands for invalid order
+
+<140>, <Message Chain>, calls product via globalInventoryData class
+
+##reportScheduler.java
+<NA>, <Freeloader Class>, the class is unused
+<4>, <Freeloader Method>, the "scheduleReport" method is unused
+
+##Warehouse.java
+<4-6>, <Primitive Obsession>, use of primitive data types
